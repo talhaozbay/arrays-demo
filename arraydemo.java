@@ -1,7 +1,3 @@
-//Bir öğrenci sınıfı tasarla. Her bir öğrencinin adı, soyadı ve not ortalaması bilgilerini içeren bir dizi oluştur.
-//Ardından, bu öğrenci bilgilerini kullanarak belirli bir koşula göre filtreleme yaparak öğrencileri listeleyen bir Java programı yaz. Örneğin, 
-//belirli bir not ortalamasının üzerinde olan öğrencileri listeleyebilir veya belirli bir soyadına sahip olan öğrencileri filtreleyebilirsin.
-
 import java.util.Scanner;
 
 public class arraydemo {
@@ -23,9 +19,7 @@ public class arraydemo {
             System.out.println("[3] Ogrenci Bulma");
             System.out.println("[4] Ogrenci Silme");
             System.out.print("Sayi giriniz : ");
-
             int menu = scanner.nextInt();
-
             // Öğrenci Ekleme
             if (menu == 1) {
                 System.out.print("Ogrencinin Adini Giriniz : ");
@@ -36,7 +30,6 @@ public class arraydemo {
                 noteOfStudent[add] = scanner.nextInt();
                 add++;
             }
-
             // Öğrenci Listeleme
             else if (menu == 2) {
                 if (add == 0) {
@@ -48,7 +41,6 @@ public class arraydemo {
                     }
                 }
             }
-
             // Öğrenci Bulma
             else if (menu == 3) {
                 boolean find = false;
